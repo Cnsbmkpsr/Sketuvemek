@@ -34,7 +34,6 @@ function App(): JSX.Element {
             </div>
             <div className="xl:grid-cols-4">
 
-            </div>
         </div>
     );
 
