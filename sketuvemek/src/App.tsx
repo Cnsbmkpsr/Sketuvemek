@@ -6,11 +6,11 @@ import TradingView from './components/molecules/trading/tradingview';
 
 function App() {
   return (
-    <div className="App bg-gray-500 h-screen w-screen grid grid-cols-12">
-      <div className="grid-cols-8">
+    <div className="App bg-gray-500 h-screen w-screen xl:grid xl:grid-cols-12">
+      <div className="xl:grid-cols-8">
         <TradingView/>
       </div>
-      <div className="grid-cols-4">
+      <div className="xl:grid-cols-4">
         
       </div>
     </div> 
