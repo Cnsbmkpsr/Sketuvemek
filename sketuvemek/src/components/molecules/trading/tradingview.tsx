@@ -26,7 +26,7 @@ const TradingView = (): JSX.Element => {
   return (
     <>
       <div className="tradingview-widget-container">
-        <Ticker colorTheme="dark" copyrightStyles={styles} />;
+        <Ticker colorTheme="dark" copyrightStyles={styles} />
       </div>
     </>
   )

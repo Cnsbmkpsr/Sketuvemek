@@ -4,21 +4,23 @@ import { createUseGesture, dragAction, pinchAction } from '@use-gesture/react';
 
 import {DragAndDropScreenProps} from "./IScreenDragNDrop";
 
+import Icon from "../../../utils/svgInstantiator";
+
 const useGesture = createUseGesture([dragAction, pinchAction]);
 
 const DragAnDropElement = ({ children }: DragAndDropScreenProps) => {
 
-    // React.useEffect(() => {
-    //     const handler = e => e.preventDefault();
-    //     document.addEventListener('gesturestart', handler)
-    //     document.addEventListener('gesturechange', handler)
-    //     document.addEventListener('gestureend', handler)
-    //     return () => {
-    //       document.removeEventListener('gesturestart', handler)
-    //       document.removeEventListener('gesturechange', handler)
-    //       document.removeEventListener('gestureend', handler)
-    //     }
-    //   }, []);
+    React.useEffect(() => {
+        const handler = e => e.preventDefault();
+        document.addEventListener('gesturestart', handler)
+        document.addEventListener('gesturechange', handler)
+        document.addEventListener('gestureend', handler)
+        return () => {
+          document.removeEventListener('gesturestart', handler)
+          document.removeEventListener('gesturechange', handler)
+          document.removeEventListener('gestureend', handler)
+        }
+      }, []);
 
       const [style, api] = useSpring(() => ({
         x: 0,
@@ -30,8 +32,6 @@ const DragAnDropElement = ({ children }: DragAndDropScreenProps) => {
 
       useGesture(
         {
-          // onHover: ({ active, event }) => console.log('hover', event, active),
-          // onMove: ({ event }) => console.log('move', event),
           onDrag: ({ pinching, cancel, offset: [x, y], ...rest }) => {
             if (pinching) return cancel()
             api.start({ x, y })
@@ -58,8 +58,11 @@ const DragAnDropElement = ({ children }: DragAndDropScreenProps) => {
       )
 
     return(
-    <animated.div className="" ref={ref} style={style}>
+    <animated.div className="border border-white" ref={ref} style={style}>
         {children}
+        <div className="grid grid-cols-12">
+            <Icon id={"icon-arrow-down"}/>
+        </div>
     </animated.div>
     );
 }
