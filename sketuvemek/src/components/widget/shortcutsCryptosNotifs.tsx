@@ -15,28 +15,40 @@ const TradingView = (): JSX.Element => {
             <div className="crypto_popup_loose">
                 <div>Crypto Logo</div>
                 <div className="ml-2">Crypto Name</div>
-                <div className="mx-36">Another interresting value</div>
+                <div className="mx-14 flex flex-nowrap flex-row">
+                    <div className="mx-2">Total Volume</div>
+                    <div className="mx-2">Current Price</div>
+                </div>
                 <div>-20%</div>
             </div>
 
             <div className="crypto_popup_loose">
                 <div>Crypto Logo</div>
                 <div className="ml-2">Crypto Name</div>
-                <div className="mx-36">Another interresting value</div>
+                <div className="mx-14 flex flex-nowrap flex-row">
+                    <div className="mx-2">Total Volume</div>
+                    <div className="mx-2">Current Price</div>
+                </div>
                 <div>-20%</div>
             </div>          
 
             <div className="crypto_popup_gain">
                 <div>Crypto Logo</div>
                 <div className="ml-2">Crypto Name</div>
-                <div className="mx-36">Another interresting value</div>
+                <div className="mx-14 flex flex-nowrap flex-row">
+                    <div className="mx-2">Total Volume</div>
+                    <div className="mx-2">Current Price</div>
+                </div>
                 <div>+20%</div>
             </div>
 
             <div className="crypto_popup_loose">
                 <div>Crypto Logo</div>
                 <div className="ml-2">Crypto Name</div>
-                <div className="mx-36">Another interresting value</div>
+                <div className="mx-14 flex flex-nowrap flex-row">
+                    <div className="mx-2">Total Volume</div>
+                    <div className="mx-2">Current Price</div>
+                </div>
                 <div>-20%</div>
             </div>
 
