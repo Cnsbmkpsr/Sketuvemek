@@ -2,16 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@layer components {
+  .crypto_popup_loose {
+    @apply rounded-lg flex flex-nowrap flex-1 border border-gray-300 w-full py-4 px-4 bg-red-400 text-gray-700 shadow-sm mb-2 justify-between hover:bg-red-500 duration-500;
+  }
+  .crypto_popup_gain {
+    @apply rounded-lg flex flex-nowrap flex-1 border border-gray-300 w-full py-4 px-4 bg-green-400 text-gray-700 shadow-sm mb-2 justify-between hover:bg-green-500 duration-500;
+  }
 }

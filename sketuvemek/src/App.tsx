@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import TradingView from './components/molecules/trading/tradingview';
+import ShortcutsCryptoNotifs from './components/widget/shortcutsCryptosNotifs';
 
 import './App.css';
 import {CoinInfoState, unixTimestampEarlierDate, unixTimestampToday} from "./constants";
@@ -28,15 +29,28 @@ function App(): JSX.Element {
     }, [])
 
     return (
-        <div className="App bg-gray-500 h-screen w-screen xl:grid xl:grid-cols-12">
+        <div className="bg-gray-800  h-screen w-screen xl:grid xl:grid-cols-12">
             <div className="xl:grid-cols-8">
                 <TradingView/>
             </div>
             <div className="xl:grid-cols-4">
 
+          <div>
+            <div className="flex">
+              <div className="p-2 w-1/2">
+                <h1>Traiding view, graph...</h1>
+              </div>
+              <ShortcutsCryptoNotifs />
             </div>
+          </div>
+        </div>
         </div>
     );
+
+
+
+
+
 }
 
 export default App;
