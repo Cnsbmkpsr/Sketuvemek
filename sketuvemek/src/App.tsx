@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 
 import axios from "axios";
 import TradingView from './components/molecules/trading/tradingview';
+import ShortcutsCryptoNotifs from './components/widget/shortcutsCryptosNotifs';
 
 import './App.css';
 
@@ -39,38 +40,7 @@ function App(): JSX.Element {
               <div className="p-2 w-1/2">
                 <h1>Traiding view, graph...</h1>
               </div>
-
-              <div className="flex flex-col p-2 w-1/2 m-2">
-
-                <div className="crypto_popup">
-                  <div>Crypto Logo</div>
-                  <div className="ml-2">Crypto Name</div>
-                  <div className="mx-36">Another interresting value</div>
-                  <div>-20%</div>
-                </div>
-
-                <div className="crypto_popup">
-                  <div>Crypto Logo</div>
-                  <div className="ml-2">Crypto Name</div>
-                  <div className="mx-36">Another interresting value</div>
-                  <div>-20%</div>
-                </div>          
-
-                <div className="crypto_popup bg-green-400">
-                  <div>Crypto Logo</div>
-                  <div className="ml-2">Crypto Name</div>
-                  <div className="mx-36">Another interresting value</div>
-                  <div>+20%</div>
-                </div>
-
-                <div className="crypto_popup">
-                  <div>Crypto Logo</div>
-                  <div className="ml-2">Crypto Name</div>
-                  <div className="mx-36">Another interresting value</div>
-                  <div>-20%</div>
-                </div>
-
-              </div>
+              <ShortcutsCryptoNotifs />
             </div>
           </div>
         </div>
