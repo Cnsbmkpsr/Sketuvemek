@@ -28,18 +28,19 @@ function App(): JSX.Element {
     }, [])
 
     return (
-        <div className="App bg-gray-500 h-screen w-screen xl:grid xl:grid-cols-12">
+        <div className="bg-gray-800  h-screen w-screen xl:grid xl:grid-cols-12">
             <div className="xl:grid-cols-8">
                 <TradingView/>
             </div>
             <div className="xl:grid-cols-4">
 
-          <div className="bg-gray-200">
-            <div className="bg-gray-300 flex">
-              <div className="bg-gray-400 p-2 w-1/2">
+          <div>
+            <div className="flex">
+              <div className="p-2 w-1/2">
                 <h1>Traiding view, graph...</h1>
               </div>
-              <div className="bg-gray-400 flex flex-col p-2 w-1/2">
+
+              <div className="flex flex-col p-2 w-1/2 m-2">
 
                 <div className="crypto_popup">
                   <div>Crypto Logo</div>
@@ -72,6 +73,7 @@ function App(): JSX.Element {
               </div>
             </div>
           </div>
+        </div>
         </div>
     );
 
