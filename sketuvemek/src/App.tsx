@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+
 import axios from "axios";
 import TradingView from './components/molecules/trading/tradingview';
 
@@ -36,6 +37,7 @@ function App(): JSX.Element {
             </div>
         </div>
     );
+
 
 
 
