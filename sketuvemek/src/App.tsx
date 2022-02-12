@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
-import logo from './logo.svg';
-import './App.css';
 import axios from "axios";
 import TradingView from './components/molecules/trading/tradingview';
+
+import './App.css';
 
 
 let today: Date = new Date();
@@ -27,12 +27,12 @@ function App(): JSX.Element {
 
     return (
         <div className="App bg-gray-500 h-screen w-screen xl:grid xl:grid-cols-12">
-          <div className="xl:grid-cols-8">
-            <TradingView/>
-          </div>
-          <div className="xl:grid-cols-4">
+            <div className="xl:grid-cols-8">
+                <TradingView/>
+            </div>
+            <div className="xl:grid-cols-4">
 
-          </div>
+            </div>
         </div>
     );
 }
