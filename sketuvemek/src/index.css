@@ -4,6 +4,6 @@
 
 @layer components {
   .crypto_popup {
-    @apply rounded-lg flex-1 border border-gray-300 w-full py-4 px-4 bg-red-300 text-gray-700 shadow-sm mb-2;
+    @apply rounded-lg flex flex-nowrap flex-1 border border-gray-300 w-full py-4 px-4 bg-red-400 text-gray-700 shadow-sm mb-2 justify-between;
   }
 }

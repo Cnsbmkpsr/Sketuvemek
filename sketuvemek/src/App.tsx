@@ -34,6 +34,44 @@ function App(): JSX.Element {
             </div>
             <div className="xl:grid-cols-4">
 
+          <div className="bg-gray-200">
+            <div className="bg-gray-300 flex">
+              <div className="bg-gray-400 p-2 w-1/2">
+                <h1>Traiding view, graph...</h1>
+              </div>
+              <div className="bg-gray-400 flex flex-col p-2 w-1/2">
+
+                <div className="crypto_popup">
+                  <div>Crypto Logo</div>
+                  <div className="ml-2">Crypto Name</div>
+                  <div className="mx-36">Another interresting value</div>
+                  <div>-20%</div>
+                </div>
+
+                <div className="crypto_popup">
+                  <div>Crypto Logo</div>
+                  <div className="ml-2">Crypto Name</div>
+                  <div className="mx-36">Another interresting value</div>
+                  <div>-20%</div>
+                </div>          
+
+                <div className="crypto_popup bg-green-400">
+                  <div>Crypto Logo</div>
+                  <div className="ml-2">Crypto Name</div>
+                  <div className="mx-36">Another interresting value</div>
+                  <div>+20%</div>
+                </div>
+
+                <div className="crypto_popup">
+                  <div>Crypto Logo</div>
+                  <div className="ml-2">Crypto Name</div>
+                  <div className="mx-36">Another interresting value</div>
+                  <div>-20%</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
     );
 
