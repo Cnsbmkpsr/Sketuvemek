@@ -3,9 +3,11 @@ import axios from "axios";
 import TradingView from './components/molecules/trading/tradingview';
 import ShortcutsCryptoNotifs from './components/widget/shortcutsCryptosNotifs';
 import DragAnDropElement from './components/organim/dragNDrop/screenDragNDrop';
+import Navigation from "./components/organim/navigation/Navigation";
 
 import './App.css';
 import {CoinInfoState, unixTimestampEarlierDate, unixTimestampToday} from "./constants";
+
 
 function App(): JSX.Element {
 
@@ -31,7 +33,14 @@ function App(): JSX.Element {
 
     return (
         <div className="bg-gray-800  h-screen w-screen xl:grid xl:grid-cols-12">
-            <div className="xl:grid-cols-8 col-span-6">
+          <div className="col-span-2">
+            <Navigation/>
+          </div>
+          <div className="grid grid-cols-12 col-span-10">
+                        <div className="xl:grid-cols-8 col-span-6">
+              <DragAnDropElement>
+                <TradingView/>
+              </DragAnDropElement>
               <DragAnDropElement>
                 <TradingView/>
               </DragAnDropElement>
@@ -47,6 +56,7 @@ function App(): JSX.Element {
             </div>
           </div>
         </div>
+          </div>
         </div>
     );
 
