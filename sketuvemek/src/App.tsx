@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import TradingView from './components/molecules/trading/tradingview';
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <section>
+        <TradingView/>
+      </section>
     </div>
   );
 }
