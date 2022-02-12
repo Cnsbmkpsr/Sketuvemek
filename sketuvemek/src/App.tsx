@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import TradingView from './components/molecules/trading/tradingview';
 import ShortcutsCryptoNotifs from './components/widget/shortcutsCryptosNotifs';
+import DragAnDropElement from './components/organim/dragNDrop/screenDragNDrop';
 
 import './App.css';
 import {CoinInfoState, unixTimestampEarlierDate, unixTimestampToday} from "./constants";
@@ -30,8 +31,10 @@ function App(): JSX.Element {
 
     return (
         <div className="bg-gray-800  h-screen w-screen xl:grid xl:grid-cols-12">
-            <div className="xl:grid-cols-8">
+            <div className="xl:grid-cols-8 col-span-6">
+              <DragAnDropElement>
                 <TradingView/>
+              </DragAnDropElement>
             </div>
             <div className="xl:grid-cols-4">
 
