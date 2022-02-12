@@ -2,10 +2,11 @@ import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from "axios";
+import TradingView from './components/molecules/trading/tradingview';
+
 
 let today: Date = new Date();
 const unixTimestampToday: number = Math.floor(today.getTime() / 1000);
-
 let earlierDate: Date = new Date();
 earlierDate.setDate(today.getDate() - 3);
 
@@ -25,21 +26,13 @@ function App(): JSX.Element {
     }, [])
 
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+        <div className="App bg-gray-500 h-screen w-screen xl:grid xl:grid-cols-12">
+          <div className="xl:grid-cols-8">
+            <TradingView/>
+          </div>
+          <div className="xl:grid-cols-4">
+
+          </div>
         </div>
     );
 }
