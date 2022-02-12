@@ -5,6 +5,7 @@ import TradingView from './components/molecules/trading/tradingview';
 import './App.css';
 
 
+
 let today: Date = new Date();
 const unixTimestampToday: number = Math.floor(today.getTime() / 1000);
 let earlierDate: Date = new Date();
@@ -35,6 +36,7 @@ function App(): JSX.Element {
             </div>
         </div>
     );
+
 }
 
 export default App;
