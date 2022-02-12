@@ -33,10 +33,10 @@ function App(): JSX.Element {
 
     return (
         <div className="bg-gray-800  h-screen w-screen xl:grid xl:grid-cols-12">
-          <div className="col-span-2">
+          <div className="xl:col-span-2">
             <Navigation/>
           </div>
-          <div className="grid grid-cols-12 col-span-10">
+          <div className="xl:grid xl:grid-cols-12 xl:col-span-10">
                         <div className="xl:grid-cols-8 col-span-6">
               <DragAnDropElement>
                 <TradingView/>
@@ -47,14 +47,14 @@ function App(): JSX.Element {
             </div>
             <div className="xl:grid-cols-4">
 
-          <div>
+          {/* <div>
             <div className="flex">
               <div className="p-2 w-1/2">
                 <h1>Traiding view, graph...</h1>
               </div>
               <ShortcutsCryptoNotifs />
             </div>
-          </div>
+          </div> */}
         </div>
           </div>
         </div>
