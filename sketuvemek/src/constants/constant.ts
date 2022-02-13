@@ -1,3 +1,3 @@
 
 
-export const URL_ROOT = "";
+export const BACK_URI = "";
